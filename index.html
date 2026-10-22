@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="select.css">
+<title>Premium Select — com busca</title>
+</head>
+  
+<body>
+
+<form class="field">
+  <label id="pet-label">Escolha um pet</label>
+
+  <div class="select-wrap">
+    <div class="select placeholder"
+         role="combobox"
+         tabindex="0"
+         aria-haspopup="listbox"
+         aria-expanded="false"
+         aria-labelledby="pet-label"
+         aria-controls="pet-listbox"
+         data-value="">
+      <span class="value">
+        <span class="label">Selecione…</span>
+      </span>
+      <span class="chev" aria-hidden="true">▾</span>
+    </div>
+
+    <div class="listbox" id="pet-listbox" role="listbox" aria-labelledby="pet-label" data-drop="down">
+      <div class="search-wrap">
+        <input
+          type="text"
+          class="search"
+          placeholder="Buscar…"
+          aria-label="Buscar pet"
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
+
+      <div class="listbox-scroller" role="presentation">
+        <div class="option" role="option" data-value="" data-label="Selecione…" aria-selected="false">
+          <span class="label">Selecione…</span>
+        </div>
+
+        <div class="group" role="group" aria-label="Domésticos">
+          <span class="group-title">Domésticos</span>
+          <div>
+            <div class="option" role="option" data-value="cat" data-label="Gato" aria-selected="false">
+              <span class="label">Gato</span>
+            </div>
+            <div class="option" role="option" data-value="dog" data-label="Cachorro" aria-selected="false">
+              <span class="label">Cachorro</span>
+            </div>
+            <div class="option" role="option" data-value="hamster" data-label="Hamster" aria-selected="false">
+              <span class="label">Hamster</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="group" role="group" aria-label="Exóticos">
+          <span class="group-title">Exóticos</span>
+          <div>
+            <div class="option" role="option" data-value="chicken" data-label="Galinha" aria-selected="false">
+              <span class="label">Galinha</span>
+            </div>
+            <div class="option" role="option" data-value="fish" data-label="Peixe" aria-selected="false">
+              <span class="label">Peixe</span>
+            </div>
+            <div class="option" role="option" data-value="snake" data-label="Serpente" aria-selected="false">
+              <span class="label">Serpente</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="empty" aria-live="polite">
+          <strong>Nada encontrado</strong>
+          Tente outro termo.
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+</body>
+</html>
