@@ -42,7 +42,6 @@
       radial-gradient(1200px 800px at 15% -10%, var(--bg-glow-1), transparent 60%),
       radial-gradient(1000px 700px at 110% 110%, var(--bg-glow-2), transparent 55%),
       var(--bg);
-    display: grid;
     place-items: center;
     min-height: 100vh;
     padding: 48px 24px;
